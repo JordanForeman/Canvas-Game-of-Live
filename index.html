@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>The Game of Life</title>
+		<style type="text/css">
+			Body
+			{
+				display: block;
+				width: 100%;
+				margin: 0 auto;
+				background-color: #cacaca;
+				text-align: center;
+			}
+			
+			h1, p
+			{
+				margin-bottom: -5px;
+			}
+			
+			#screen
+			{
+				display: block;
+				margin: 5px auto;
+				background-color: #FFF;
+				border: 1px solid #000;
+			}
+		</style>
+		<script type="text/javascript" src="main.js"></script>
+	</head>
+	<body onload="main();">
+		<h1>Conway's Game of Life</h1>
+		<p>Iteration: <span id="iteration">0</span></p>
+		<canvas id="screen" height="500" width="500">
+			<span class="error">Sorry, your browser does not support HTML5 Canvas</span>
+		</canvas>
+	</body>
+</html>
