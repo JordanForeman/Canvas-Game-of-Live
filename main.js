@@ -93,6 +93,7 @@ function drawCell(cell){
 }
 
 //Removes a cell from the board
+//TODO: fix this so that it only paints white over the cell, and not the grid lines...this is still a bit of a process.
 function removeCell(cell){
 	context.fillStyle = '#FFFFFF';
 	var space = 5 * zoom;
